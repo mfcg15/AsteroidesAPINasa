@@ -1,0 +1,153 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#particles-js
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #232742;
+    position: fixed;
+    z-index: -1;
+}
+
+.contenedor
+{
+    width:48%; 
+    padding: 20px;
+}
+
+.contenedor_logo
+{
+    width: 28%;
+}
+
+.contenedor_titulo
+{
+    margin-top: 14px;
+}
+
+h3
+{
+    color: white;
+    text-align: center;
+}
+
+.linea
+{
+    justify-content: center;
+    display: flex;
+    margin-top: 40px; 
+    width: 80%;
+}
+
+label
+{
+    color: white;
+}
+
+.campo_label
+{
+    margin-right: 10px;
+}
+
+.campo_input
+{
+    margin-right: 40px;
+}
+
+.textoMensajeAlert
+{
+    color : #fc302d;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+}
+
+.contenedorAsteroides
+{
+    margin-top: 40px;
+}
+
+.grid-container 
+{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 60px;
+}
+  
+.grid-container > div 
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor_carga
+{
+    width: 85%;
+    position: fixed;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+#carga
+{
+    border: 15px solid #ccc;
+    border-top-color: #ef401c;
+    border-top-style: groove;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+}
+
+.card 
+{
+    width: 20rem;
+}
+
+.card-title 
+{
+    color: black;
+}
+
+p
+{
+    color: black;
+    text-align: start;
+}
+
+.contenedor_asteroides
+{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: max-width;
+}
+
+.letraAsteroide
+{
+    font-size: 30px; 
+    font-weight: bold;
+}
+
+@keyframes girar {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
